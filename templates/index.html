@@ -2,4 +2,34 @@
 {% block content %}
 <h2>Главная страница</h2>
 <p>Добро пожаловать на наш сайт!</p>
+<!-- Контейнер для главной страницы -->
+<div class="main-page-container" style="width: 100%; padding: 20px; box-sizing: border-box;">
+    <!-- Контейнер для задач -->
+    <div class="tasks-container" style="display: flex; flex-wrap: wrap; gap: 20px;">
+      <!-- Отдельная задача -->
+      <div class="task-card" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; width: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <!-- Название задачи -->
+        <div class="task-title" style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">
+          Название задачи
+        </div>
+        <!-- Краткая информация о задаче -->
+        <div class="task-info" style="font-size: 14px; color: #666;">
+          Краткая информация о задаче. Здесь можно разместить описание в пару строк.
+        </div>
+      </div>
+  
+      <!-- Копируйте блоки task-card для других задач -->
+      <div class="task-card" style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; width: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div class="task-title" style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">
+          Пример задачи 2
+        </div>
+        <div class="task-info" style="font-size: 14px; color: #a1b188;">
+          Более подробная информация может добавляться здесь.
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+  
 {% endblock %}
