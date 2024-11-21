@@ -1,5 +1,54 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>Страница авторизации</h2>
-<p>Здесь будет форма авторизации.</p>
+
+  <div class="auth-container">
+    <!-- Логотип -->
+    <div class="auth-logo">
+      <img src="https://sber-logo-url-placeholder.com/logo.png" alt="Логотип Сбера">
+    </div>
+
+    <!-- Кнопка закрытия -->
+    <button class="register-close" onclick="closeForm()">×</button>
+
+
+    <!-- Заголовок формы -->
+    <div class="auth-title">Авторизация</div>
+
+    <!-- Форма -->
+    <form action="/auth" method="POST">
+      <!-- Поле ввода логина -->
+      <input 
+        type="text" 
+        name="login" 
+        placeholder="Введите логин" 
+        class="auth-form-input" 
+        required
+      >
+      <!-- Поле ввода пароля -->
+      <input 
+        type="password" 
+        name="password" 
+        placeholder="Введите пароль" 
+        class="auth-form-input" 
+        required
+      >
+
+      <!-- Кнопка входа -->
+      <button type="submit" class="auth-button">Войти</button>
+    </form>
+
+    <!-- Ссылки -->
+    <div class="auth-links">
+      <a href="#">Забыли пароль?</a> | <a href="#">Регистрация</a>
+    </div>
+  </div>
+
+  <script>
+    // Функция для закрытия формы
+    function closeForm() {
+      document.querySelector('.auth-container').style.display = 'none';
+    }
+  </script>
+
+
 {% endblock %}

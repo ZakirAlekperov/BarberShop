@@ -111,5 +111,217 @@
     transform: translateY(-2px);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
+
+  /*********************************************************/
+   /* Стили для body */
+   body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(145deg, #00b754, #00753a); /* Цвета Сбера */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+  }
+
+  /* Контейнер формы */
+  .auth-container {
+    background: #ffffff;
+    color: #000;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+  }
+
+  /* Лого авторизации */
+  .auth-logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .auth-logo img {
+    width: 120px;
+  }
+
+  /* Заголовок формы */
+  .auth-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  /* Стили для полей ввода */
+  .auth-form-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  .auth-form-input:focus {
+    outline: none;
+    border-color: #00b754; /* Основной цвет */
+    box-shadow: 0 0 5px #00b754;
+  }
+
+  /* Кнопка отправки */
+  .auth-button {
+    width: 100%;
+    padding: 12px;
+    background: #00b754;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .auth-button:hover {
+    background: #00753a;
+  }
+
+  /* Стили для ссылок */
+  .auth-links {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .auth-links a {
+    color: #00b754;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .auth-links a:hover {
+    text-decoration: underline;
+  }
   
+
+
+  /*****************************************/
+      /* Стили для body */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(145deg, #00b754, #00753a); /* Цвета Сбера */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: #fff;
+      }
   
+      /* Контейнер формы */
+      .register-container {
+        background: #ffffff;
+        color: #000;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        max-width: 400px;
+        padding: 30px;
+        position: relative; /* Для кнопки закрытия */
+      }
+  
+      /* Лого авторизации */
+      .register-logo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+  
+      .register-logo img {
+        width: 120px;
+      }
+  
+      /* Заголовок формы */
+      .register-title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+  
+      /* Стили для полей ввода */
+      .register-form-input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+  
+      .register-form-input:focus {
+        outline: none;
+        border-color: #00b754; /* Основной цвет */
+        box-shadow: 0 0 5px #00b754;
+      }
+  
+      /* Кнопка регистрации */
+      .register-button {
+        width: 100%;
+        padding: 12px;
+        background: #00b754;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+  
+      .register-button:hover {
+        background: #00753a;
+      }
+  
+      /* Стили для ссылок */
+      .register-links {
+        text-align: center;
+        margin-top: 10px;
+      }
+  
+      .register-links a {
+        color: #00b754;
+        text-decoration: none;
+        font-size: 14px;
+      }
+  
+      .register-links a:hover {
+        text-decoration: underline;
+      }
+  
+      /* Кнопка закрытия */
+      .register-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+        color: #000;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s ease;
+      }
+  
+      .register-close:hover {
+        background: #e6e6e6;
+      }

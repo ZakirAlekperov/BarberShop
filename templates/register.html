@@ -1,5 +1,78 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>Страница регистрации</h2>
-<p>Здесь будет форма регистрации.</p>
+
+  <div class="register-container">
+    <!-- Кнопка закрытия -->
+    <button class="register-close" onclick="closeForm()">×</button>
+
+    <!-- Логотип -->
+    <div class="register-logo">
+      <img src="https://sber-logo-url-placeholder.com/logo.png" alt="Логотип Сбера">
+    </div>
+
+    <!-- Заголовок формы -->
+    <div class="register-title">Регистрация</div>
+
+    <!-- Форма регистрации -->
+    <form action="/register" method="POST">
+      <!-- Имя -->
+      <input 
+        type="text" 
+        name="first_name" 
+        placeholder="Введите имя" 
+        class="register-form-input" 
+        required
+      >
+      <!-- Фамилия -->
+      <input 
+        type="text" 
+        name="last_name" 
+        placeholder="Введите фамилию" 
+        class="register-form-input" 
+        required
+      >
+      <!-- Email -->
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Введите email" 
+        class="register-form-input" 
+        required
+      >
+      <!-- Пароль -->
+      <input 
+        type="password" 
+        name="password" 
+        placeholder="Придумайте пароль" 
+        class="register-form-input" 
+        required
+      >
+      <!-- Подтверждение пароля -->
+      <input 
+        type="password" 
+        name="confirm_password" 
+        placeholder="Подтвердите пароль" 
+        class="register-form-input" 
+        required
+      >
+
+      <!-- Кнопка регистрации -->
+       
+      <button type="submit" class="register-button">Зарегистрироваться</button>
+    </form>
+
+    <!-- Ссылки -->
+    <div class="register-links">
+      <a href="#">Уже есть аккаунт? Войти</a>
+    </div>
+  </div>
+
+  <script>
+    // Функция для закрытия формы
+    function closeForm() {
+      document.querySelector('.register-container').style.display = 'none';
+    }
+  </script>
+
+
 {% endblock %}
