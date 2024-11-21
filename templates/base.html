@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }} - Мой Сайт</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1><a href="{{ url_for('index') }}">Мой Сайт</a></h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('register') }}">Регистрация</a></li>
+                <li><a href="{{ url_for('login') }}">Вход</a></li>
+                <li><a href="{{ url_for('dashboard') }}">Личный кабинет</a></li>
+                <li><a href="{{ url_for('contacts') }}">Контакты</a></li>
+                <li><a href="{{ url_for('deals') }}">Сделки</a></li>
+                <li><a href="{{ url_for('tasks') }}">Задачи</a></li>
+                <li><a href="{{ url_for('reports') }}">Отчёты</a></li>
+                <li><a href="{{ url_for('admin') }}">Админка</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        © 2023 Мой Сайт
+    </footer>
+</body>
+</html>
