@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ title }} - Мой Сайт</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% block style %}
+    
+    {% endblock %}
 </head>
 <body>
     <header>

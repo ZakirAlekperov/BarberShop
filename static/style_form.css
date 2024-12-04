@@ -1,0 +1,87 @@
+/* Стили для контейнера формы регистрации */
+.register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative; /* Для позиционирования кнопки закрытия */
+}
+
+/* Кнопка закрытия */
+.register-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Логотип */
+.register-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-logo img {
+    max-width: 100%;
+    height: auto; /* Поддержка пропорций изображения */
+}
+
+/* Заголовок формы */
+.register-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Поля ввода */
+.register-form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.register-form-input:focus {
+    border-color: #007aff; /* Цвет рамки при фокусе */
+}
+
+/* Кнопка регистрации */
+.register-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007aff; /* Основной цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.register-button:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+    transform: translateY(-2px);
+}
+
+/* Ссылки */
+.register-links {
+    text-align: center; /* Центрирование ссылок */
+}
+
+.register-links a {
+    color: #007aff; /* Цвет ссылки */
+    text-decoration: none; 
+}
+
+.register-links a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}

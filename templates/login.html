@@ -1,9 +1,14 @@
 {% extends "base.html" %}
+
+{% block style %}  
+<link rel="stylesheet" href="{{ url_for('static', filename='style_form.css') }}">
+{% endblock %}
+
 {% block content %}
 
-  <div class="auth-container">
+  <div class="register-container">
     <!-- Логотип -->
-    <div class="auth-logo">
+    <div class="register-logo">
       <img src="https://sber-logo-url-placeholder.com/logo.png" alt="Логотип Сбера">
     </div>
 
@@ -12,16 +17,16 @@
 
 
     <!-- Заголовок формы -->
-    <div class="auth-title">Авторизация</div>
+    <div class="register-title">Авторизация</div>
 
     <!-- Форма -->
-    <form action="/auth" method="POST">
+    <form action="/register" method="POST">
       <!-- Поле ввода логина -->
       <input 
         type="text" 
         name="login" 
         placeholder="Введите логин" 
-        class="auth-form-input" 
+        class="register-form-input" 
         required
       >
       <!-- Поле ввода пароля -->
@@ -29,16 +34,16 @@
         type="password" 
         name="password" 
         placeholder="Введите пароль" 
-        class="auth-form-input" 
+        class="register-form-input" 
         required
       >
 
       <!-- Кнопка входа -->
-      <button type="submit" class="auth-button">Войти</button>
+      <button type="submit" class="register-button">Войти</button>
     </form>
 
     <!-- Ссылки -->
-    <div class="auth-links">
+    <div class="register-links">
       <a href="#">Забыли пароль?</a> | <a href="#">Регистрация</a>
     </div>
   </div>
@@ -46,7 +51,7 @@
   <script>
     // Функция для закрытия формы
     function closeForm() {
-      document.querySelector('.auth-container').style.display = 'none';
+      document.querySelector('.register-container').style.display = 'none';
     }
   </script>
 
