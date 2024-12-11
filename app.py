@@ -1,4 +1,8 @@
 from flask import Flask, render_template, redirect, url_for
+from models import *
+
+
+
 
 app = Flask(__name__)
 
