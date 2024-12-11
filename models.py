@@ -12,3 +12,15 @@ class Client(db.Model):
 
     def __repr__(self):
         return f"id: {self.client_id}, name: {self.client_name}, phone number: {self.client_phone_number}, email: {self.client_email}, permonent: {self.is_permonent_client}"
+    
+    
+class User(db.Model):
+    
+    
+    def __repr__(self):
+        pass
+    
+
+class Service(db.Model):
+    
+    def __repr__(self):
